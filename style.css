@@ -69,3 +69,45 @@ input[type="checkbox"]:hover+label {
 footer{
 	text-align: center;
 }
+
+#success,
+#fail {
+  display: none;
+}
+#message,
+#success,
+#fail {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p {
+  display: inline;
+  margin-right: 5px;
+}
+input,
+
+input {
+  border: 1px solid red;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+}
+button {
+  border: none;
+  border-radius: 1.5em;
+  color: #FFF;
+  background: #FFBBD7;
+  padding: 2.5px 10px;
+  width: 75px;
+  height: 30px;
+  cursor: pointer;
+  transition: background .5s ease-in-out;
+}
+button:hover:enabled {
+  background: #303030;
+}
+button:disabled {
+  opacity: .5;
+  cursor: default;
+}
