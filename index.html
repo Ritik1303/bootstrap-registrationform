@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <title>Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Registration forms">
+
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="scrip.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="page-header" id="heading">
+        <h1>Registration Form</h1>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <form class="form-inline" action="">
+          <br>
+          <div class="col-sm-12 col-md-12 col-lg-3 input-group ">
+            <input id="fname" type="text" class="form-control" name="fname" placeholder="First Name">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-3 input-group ">
+            <input id="mname" type="text" class="form-control" name="mname" placeholder="Middle Name">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-3 input-group ">
+            <input id="lname" type="text" class="form-control" name="lname" placeholder="Last Name">
+          </div>
+          <br>
+          <br>
+          <div class="input-group col-sm-3 col-md-3 col-lg-3">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="input-group col-sm-3 col-md-3 col-lg-3">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+          <div class="input-group col-sm-3 col-md-3 col-lg-3">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="conpassword" type="password" class="form-control" name="conpassword"
+              placeholder="Confirm Password">
+          </div>
+          <br>
+          <br>
+          <div class="input-group col-lg-4 col-md-6 col-sm-12">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+            <input id="mobile" type="tel" class="form-control" name="mobile" placeholder="Mobile Number">
+          </div>
+          <div class="input-group col-lg-4 col-md-6 col-sm-12">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+            <input id="mobile2" type="tel" class="form-control" name="mobile2" placeholder="Alternative Mobile Number">
+          </div>
+          <br>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon">Date of birth</span>
+            <input id="date" name="date" type="date" min="1998-01-01" class="form-control">
+          </div>
+          <br>
+          <br>
+          <br>
+          <fieldset class="input-group" id="gender">
+            <legend>Gender</legend>
+            <label class="radio-inline">
+              <input type="radio" name="optradio">Male
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio">Female
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="optradio">Others
+            </label>
+          </fieldset>
+          <br>
+          <br>
+          <br>
+
+
+          <fieldset id="add1">
+            <legend>Permanent address <span class="required">*</span></legend>
+            <div class="input-group">
+              <textarea id="add" type="textarea" class="form-control" name="add"
+                placeholder="House No./ Building name/ Street name"></textarea>
+            </div>
+            <br>
+            <div class="input-group">
+              <input id="city" type="text" class="form-control" name="city" placeholder="City">
+            </div>
+            <br>
+            <div class="input-group">
+              <!--<label for="state">State</label>-->
+              <select class="form-control" id="state">
+                <optgroup label="North India">
+                  <option value="Kashmir">Kashmir</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                </optgroup>
+                <optgroup label="East India">
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Bihar">Bihar</option>
+                </optgroup>
+                <optgroup label="South India">
+                  <option value="Kerala">Kerela</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Maharashtra">Maharastra</option>
+                  <option value="Karnataka">Karnataka</option>
+                </optgroup>
+                <optgroup label="West India">
+                  <option value="Gujrat">Gujrat</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                </optgroup>
+                <optgroup label="Central India">
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Chattishgarh">Chattishgarh</option>
+                </optgroup>
+                <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+                <option value="Lakswadeep">Lakswadeep</option>
+                <option value="Others">Others</option>
+              </select>
+              <br>
+              <br>
+              <div class="input-group">
+                <input id="country" type="text" class="form-control" name="country" placeholder="Country">
+              </div>
+          </fieldset>
+
+          <fieldset id="add2">
+            <legend>Alternative address</legend>
+            <div class="input-group">
+              <textarea id="add" type="textarea" class="form-control" name="add"
+                placeholder="House No./ Building name/ Street name"></textarea>
+            </div>
+            <br>
+            <div class="input-group">
+              <input id="city" type="text" class="form-control" name="city" placeholder="City">
+            </div>
+            <br>
+            <div class="input-group">
+              <!--<label for="state">State</label>-->
+              <select class="form-control" id="state">
+                <optgroup label="North India">
+                  <option value="Kashmir">Kashmir</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                </optgroup>
+                <optgroup label="East India">
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Bihar">Bihar</option>
+                </optgroup>
+                <optgroup label="South India">
+                  <option value="Kerala">Kerela</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Maharashtra">Maharastra</option>
+                  <option value="Karnataka">Karnataka</option>
+                </optgroup>
+                <optgroup label="West India">
+                  <option value="Gujrat">Gujrat</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                </optgroup>
+                <optgroup label="Central India">
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Chattishgarh">Chattishgarh</option>
+                </optgroup>
+                <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+                <option value="Lakswadeep">Lakswadeep</option>
+                <option value="Others">Others</option>
+              </select>
+              <br>
+              <br>
+              <div class="input-group">
+                <input id="country" type="text" class="form-control" name="country" placeholder="Country">
+              </div>
+              <br>
+          </fieldset>
+          <br>
+          <div class="input-group" id="hob">
+            <fieldset>
+              <legend>Select Your Field of Interest</legend>
+              <input id="sport" name="sport" type="checkbox" value="Sport">
+              <label for="sport">Sports</label>
+
+              <input id="books" name="books" type="checkbox" value="Books">
+              <label for="books">Books</label>
+
+              <input id="fashion" name="fashion" type="checkbox" value="Fashion">
+              <label for="fashion">Fashion</label>
+
+              <input id="computer" name="computer" type="checkbox" value="Computer">
+              <label for="computer">Computer</label>
+
+              <input id="software" name="software" type="checkbox" value="Software">
+              <label for="software">Software</label>
+
+              <input id="photography" name="photography" type="checkbox" value="Photography">
+              <label for="photography">Photography</label>
+
+              <input id="car" name="car" type="checkbox" value="Car">
+              <label for="car">Car</label>
+
+              <input id="food" name="food" type="checkbox" value="Food">
+              <label for="food">Food</label>
+              <br>
+            </fieldset>
+          </div>
+          <br>
+          <br>
+
+          <div class="input-group">
+            <label for="color">Select your Favourite Color <span> : </span></label>
+                <input id="color" name="color" type="color">
+          </div>
+          <br>
+          <br>
+          <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+      </form>
+    </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> &copy Ritik Mrinal 2021
+      </button>
+    
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">CopyRight</h4>
+            </div>
+            <div class="modal-body">
+              <p>This page is developed by</p>
+              <a href="https://www.linkedin.com/in/ritik-mrinal-499248151/" target=_blank style="text-decoration: none; color: black;">Ritik Mrinal</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </footer>
+</body>
+
+</html>

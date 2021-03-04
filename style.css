@@ -1,0 +1,71 @@
+html{
+	background-color: grey;
+
+}
+body{
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+div{
+	margin-bottom: 5px;
+}
+#heading{
+	border-radius: 5px;
+	background-color: #f9f3f3;
+	padding: 10px;
+	margin: -2px;
+
+}
+
+main{
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding: 2px;
+
+	background-color: lightgrey;
+}
+
+#add1{
+	float: left;
+	width: 50%;
+}
+#add2{
+	float: left;
+	width: 50%;
+}
+.required{
+	color: red;
+}
+#hob{
+	margin-top: 20px;
+}
+input[type="checkbox"] {
+	opacity: 0;
+	width: 0;
+	margin: 0;
+}
+
+input[type="checkbox"]+label {
+	border: 1px solid black;
+	background-color: rgb(247, 243, 243);
+	padding: 4px 10px 4px 10px;
+	border-radius: 8px;
+	display: inline-block;
+}
+
+input[type="checkbox"]:checked+label {
+	background-color: rgb(5, 180, 81);
+}
+
+input[type="checkbox"]:hover+label {
+	background-color: rgb(143, 236, 240);
+	cursor: pointer;
+	font-weight: bold;
+	transform: translateY(4px);
+
+}
+footer{
+	text-align: center;
+}
