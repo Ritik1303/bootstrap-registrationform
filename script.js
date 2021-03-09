@@ -22,7 +22,7 @@ function validate()
     return false;
   }
   else if(password.value.trim()==""){
-    alert("Enter password name");
+    alert("Enter password");
     return false;
   }
   else if(password.value.trim()!=""){
