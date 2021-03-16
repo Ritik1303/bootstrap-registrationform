@@ -10,6 +10,7 @@ body{
 }
 div{
 	margin-bottom: 5px;
+
 }
 #heading{
 	border-radius: 5px;
@@ -18,7 +19,9 @@ div{
 	margin: -2px;
 
 }
-
+.fname, .lname, .mname,.email,.password,.conpassword,.mobile,.mobile2{
+	margin-right: 95px;
+}
 main{
 	box-sizing: border-box;
 	margin-top: 20px;
@@ -29,11 +32,14 @@ main{
 
 #add1{
 	float: left;
-	width: 50%;
+	width: 60%;
+
+	
 }
 #add2{
-	float: left;
-	width: 50%;
+}
+#address, #address2{
+	width: 107%;
 }
 .required{
 	color: red;
