@@ -9,14 +9,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
   <!-- jQuery library -->
-  <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script type = "text/javascript" src="jquery-3.6.0.min.js"></script>
-  <script type = "text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 
 </head>
 
@@ -32,9 +32,9 @@
   <main>
     <div class="container">
       <div class="row">
-        <form class="form-inline" action="success.html" onsubmit="return validate()">
+        <form class="form-inline" action="success.html" onsubmit="return control.validate() ">
           <br>
-          <div class="col-sm-3 col-md-3 col-lg-3 input-group fname" >
+          <div class="col-sm-3 col-md-3 col-lg-3 input-group fname">
             <input id="fname" type="text" class="form-control" name="fname" placeholder="First Name">
           </div>
           <div class="col-sm-3 col-md-3 col-lg-3 input-group mname">
@@ -239,7 +239,7 @@
           </div>
           <br>
           <br>
-       
+
           <div class="container">
             <p id="operation"><span id="num1">1</span> + <span id="num2">20</span></p>
             <input type="text" id="input_val" />
@@ -247,10 +247,10 @@
             <br>
             <br>
             <br>
-            <button type="submit" class="btn btn-default" id="btn">Submit</button>
+            <button type="submit" class="btn btn-default" id="btn" onclick="query()">Submit</button>
           </div>
 
-          
+
 
 
       </div>
@@ -289,9 +289,9 @@
 
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type = "text/javascript" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
